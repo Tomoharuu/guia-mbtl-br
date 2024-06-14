@@ -60,15 +60,40 @@
 </nav>
 
 
+<style>
 
+ /* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+
+ 
+/* On screens that are less than 992px (lg) wide, make the sidebar disappear */
+@media screen and (min-width: 992px) {
+  div.content {
+  margin-left: 250px;
+  padding: 1px 1px;
+  height: 100%x;
+}
+
+
+</style>
 
 
 
 
 <div class="container-fluid">
 <div class="row">
-<div class="col-2 d-none d-lg-block bg-dark text-bg-dark" style="background-color: #d8dee0">
-<img class="img-fluid mx-auto d-block my-3" style="width:300px" src="images/satsuki_logo.png"><hr>
+<div class="sidebar text-bg-dark d-none d-lg-block">
+<img class="img-fluid mx-auto d-block my-3" style="width:230px" src="images/satsuki_logo.png"><hr>
+<div class="ms-2">
 <h3>Guia de MBTL<br></h3><p>feito por Tomoharu</p><hr>
 <p><strong>Página Inicial</strong><br>
 <a class="text-light" href="primeiros-passos.html">Primeiros Passos</a><br>
@@ -78,10 +103,12 @@
 Fundamentos Avançados<br>
 <a class="text-light" href="novo-patch.html">Sobre o Novo Patch</a><br></p></p>
 
-
-
 </div>
-<div class="col-12 col-lg-10">
+</div>
+</div>
+
+<div class="col-12">
+<div class="content">
 
 <h1 class="display-6 mt-3">Introdução</h1>
 <hr>
@@ -138,7 +165,6 @@ Seguem abaixo os links para todas as redes sociais da RBBR:
       <a href="https://www.youtube.com/@ReverseBeatBrasil" class="btn btn-danger"><i class="bi bi-youtube"></i> YouTube</a>
     </div>
   </div>
-  <br>
 
 </div>
 </div>
@@ -214,7 +240,7 @@ O jogo periodiacamente entra em promoção, então é sempre bom ficar atento pa
 
 
 </div>
-
+</div>
 </div>
 
 
